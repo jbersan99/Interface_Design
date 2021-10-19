@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+  }
+
+body { 
+    width: 100%;
+}
+
+p {
+    flex: auto;
+    display: inline;
+    width: 100%;
+    -webkit-flex: flex;
+}
+
+#ab { 
+    width: auto;
+}
