@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML 5 + CSS 3. Ejercicios. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco. www.mclibre.org
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "html5css3";
+            src: url("html5css3.woff");
+        }
+
+        @font-face {
+            font-family: "Black Ops One";
+            src: url("black-ops-one.woff");
+        }
+
+        body {
+            font-family: "Black Ops One";
+            font-size: 300%;
+            text-align: center;
+        }
+
+        div {
+            clear: both;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-bottom: blue 3px solid;
+        }
+
+        i {
+            font-family: "html5css3";
+            font-size: 300%;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        i.izquierda {
+            float: left;
+            margin-right: 10px;
+        }
+
+        i.derecha {
+            float: right;
+            margin-left: 10px;
+        }
+
+        [class^="icon-"],
+        [class*="icon-"] {
+            font-family: 'html5css3';
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-happy::before {
+            content: "\e600";
+            color: red;
+        }
+
+        .icon-tux::before {
+            content: "\e601";
+            color: #0D3A63;
+        }
+
+        .icon-apple::before {
+            content: "\e602";
+            color: #E7E8ED;
+        }
+
+        .icon-android::before {
+            content: "\e603";
+            color: #8EC047;
+        }
+
+        .icon-windows8::before {
+            content: "\e604";
+            color: #00BCF2;
+        }
+
+        .icon-html5::before {
+            content: "\e605";
+            color: red;
+        }
+
+        .icon-css3::before {
+            content: "\e606";
+            color: red;
+        }
+
+        .icon-chrome::before {
+            content: "\e607";
+            color: #58BA47;
+        }
+
+        .icon-firefox::before {
+            content: "\e608";
+            color: #AB2A25;
+        }
+
+        .icon-IE::before {
+            content: "\e609";
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p><i class="icon-html5 izquierda"></i><i class="icon-css3 derecha"></i> HTML 5 y CSS 3 son <br> los
+            ingredientes de<br>la nueva web </p>
+    </div>
+
+    <div>
+        <p>Una web independiente<br> del sistema operativo</p>
+        <p><i class="icon-windows8"></i> <i class="icon-apple"></i> <i class="icon-android"></i> <i
+                class="icon-tux"></i></p>
+    </div>
+
+    <div>
+        <p>Una web independiente<br> del navegador</p>
+        <p><i class="icon-firefox"></i> <i class="icon-chrome"></i> <i class="icon-IE"></i></p>
+    </div>
+
+    <div>
+        <p>Una web pendiente<br> de ti</p>
+        <p><i class="icon-happy"></i></p>
+    </div>
+
+</body>
+
+</html>

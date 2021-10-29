@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Previsión del tiempo. Ejercicios. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco.
+        www.mclibre.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "Righteous";
+            src: url("../font/righteous.woff");
+        }
+
+        body {
+            background-color: #B4D2F7;
+            font-family: "Righteous", sans-serif;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 400%;
+            text-align: center;
+        }
+
+        h1 i {
+            color: red;
+        }
+
+        div {
+            float: left;
+            width: 3.5em;
+            border: black 5px solid;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin: 0.5em;
+            font-size: 300%;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        p.dia {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-color: #C7C7C7;
+            text-transform: uppercase;
+        }
+
+        p.icono {
+            padding: 20px 0 20px;
+            background-color: white;
+            font-size: 120%;
+        }
+
+        p.maximo {
+            color: white;
+        }
+
+        p.maximo.bajo {
+            background-color: #E56F60;
+        }
+
+        p.maximo.medio {
+            background-color: #ED5350;
+        }
+
+        p.maximo.alto {
+            background-color: #F40000;
+        }
+
+        p.minimo {
+            color: white;
+        }
+
+        p.minimo.bajo {
+            background-color: #0300C1;
+        }
+
+        p.minimo.medio {
+            background-color: #0769BF;
+        }
+
+        p.minimo.alto {
+            background-color: #35B4EA;
+        }
+    </style>
+    <link rel="stylesheet" href="css/weather-icons.css">
+</head>
+
+<body>
+    <h1><i class="wi wi-umbrella"></i> Previsión del tiempo <i class="wi wi-thermometer"></i></h1>
+
+    <div>
+        <p class="dia">Lun</p>
+        <p class="icono"><i class="wi wi-day-sunny"></i></p>
+        <p class="maximo alto">29º</p>
+        <p class="minimo alto">12º</p>
+    </div>
+
+    <div>
+        <p class="dia">Mar</p>
+        <p class="icono"><i class="wi wi-day-cloudy"></i></p>
+        <p class="maximo medio">22º</p>
+        <p class="minimo alto">12º</p>
+    </div>
+
+    <div>
+        <p class="dia">Mie</p>
+        <p class="icono"><i class="wi wi-rain"></i></p>
+        <p class="maximo bajo">13º</p>
+        <p class="minimo medio">7º</p>
+    </div>
+
+    <div>
+        <p class="dia">Jue</p>
+        <p class="icono"><i class="wi wi-storm-showers"></i></p>
+        <p class="maximo bajo">12º</p>
+        <p class="minimo bajo">4º</p>
+    </div>
+
+    <div>
+        <p class="dia">Vie</p>
+        <p class="icono"><i class="wi wi-cloudy"></i></p>
+        <p class="maximo medio">18º</p>
+        <p class="minimo bajo">4º</p>
+    </div>
+
+</body>
+
+</html>
