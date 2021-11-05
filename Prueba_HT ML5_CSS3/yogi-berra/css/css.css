@@ -1,0 +1,63 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(102, 77, 102);
+    text-align: center;
+    padding: 5px;
+    text-shadow: 2px 2px white;
+
+}
+
+hr{
+    height: 3px;
+}
+
+#info{
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 25px;
+}
+
+#texto{
+    padding: 5px;
+}
+
+img{
+    border-style: solid;
+    padding: 10px;
+}
+
+.naranja{
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+    font-size: 25px;
+    text-align: left;
+    display: inline-block;
+    border-style: dashed;
+    border-color: white;
+}
+
+.verde{
+    background-color: greenyellow;
+    width: 250px;
+    height: 250px;
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    border-style: solid;
+    border-color: green;
+    border-radius: 15px;
+}
+
+#contenido{
+    background-color: rgb(66, 150, 247);
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#cuadros{
+    display: block;
+    text-align: center;
+}
+
