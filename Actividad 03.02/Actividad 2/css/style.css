@@ -1,0 +1,31 @@
+h2:first-child{
+    color: rgb(194, 6, 6);
+}
+
+h2::first-letter{
+    color: red;
+}
+
+ul{
+    list-style: none;
+}
+
+.oculta{
+    display: none;
+}
+
+li:nth-child(odd):hover { 
+    color: greenyellow; 
+}
+
+li:nth-child(odd):hover .oculta { 
+    display: block; 
+}
+
+li:nth-child(even):hover { 
+    color: red; 
+}
+
+li:nth-child(even):hover .oculta { 
+    display: block; 
+}
