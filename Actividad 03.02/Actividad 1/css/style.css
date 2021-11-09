@@ -3,6 +3,29 @@ header{
     width: 550px;
 }
 
+.navegacion:nth-child(2)::before{
+    content: url(../img/plus.png);
+}
+
+.navegacion:nth-child(3)::before{
+    content: url(../img/cart.png);
+}
+
+.navegacion:nth-child(4)::before{
+    content: url(../img/star.png);
+}
+
+.navegacion:nth-child(5)::before{
+    content: url(../img/pdf.png);
+}
+
+.navegacion:nth-child(6)::before{
+    content: url(../img/gallery.png);
+}
+
+.navegacion:nth-child(7)::before{
+    content: url(../img/shield.png);
+}
 
 h1{
     padding: 15px;
