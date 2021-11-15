@@ -114,14 +114,23 @@ time, mark, audio, video {
 }
 
 .caja.caja9:hover{
-  transform: perspective(400px) rotateY(45deg);
+  transform: perspective(400px) rotateX(45deg);
 }
 
 .caja.caja10{
   transition: 1s linear;
-  background-color: rgb(0,0,0);
+  background-color: #808080;
 }
 
 .caja.caja10:hover{
+  transform: perspective(400px) rotateY(45deg);
+}
+
+.caja.caja11{
+  transition: 1s linear;
+  background-color: rgb(0,0,0);
+}
+
+.caja.caja11:hover{
   transform: matrix(1, 2, -1, 1, 80, 80);
 }
