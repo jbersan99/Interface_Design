@@ -35,12 +35,20 @@ time, mark, audio, video {
   font-family: Arial;
 }
 
+.caja1{
+  transition: background-color 3s linear;
+}
+
 .caja.caja1{
   background-color:#C0392B ;
 }
 
 .caja.caja1:hover{
   background-color: #17A589;
+}
+
+.caja2{
+  transition: font-size 3s linear;
 }
 
 .caja.caja2{
@@ -51,12 +59,20 @@ time, mark, audio, video {
   font-size: 35px;
 }
 
+.caja3{
+  transition: color 3s linear;
+}
+
 .caja.caja3{
   background-color: #2980B9;
 }
 
 .caja.caja3:hover{
   color:crimson;
+}
+
+.caja4{
+  transition: line-height 3s linear;
 }
 
 .caja.caja4{
@@ -67,12 +83,20 @@ time, mark, audio, video {
   line-height: 25px;
 }
 
+.caja5{
+  transition: border-radius 3s linear;
+}
+
 .caja.caja5{
   background-color: #17A589;
 }
 
 .caja.caja5:hover{
   border-radius: 25px;
+}
+
+.caja6{
+  transition: box-shadow 3s linear;
 }
 
 .caja.caja6{
@@ -83,12 +107,20 @@ time, mark, audio, video {
   box-shadow: 10px 5px 5px black;
 }
 
+.caja7{
+  transition: opacity 3s linear;
+}
+
 .caja.caja7{
   background-color:#E67E22 ;
 }
 
 .caja.caja7:hover{
   opacity: 25%;
+}
+
+.caja8{
+  transition: border 3s linear;
 }
 
 .caja.caja8{
@@ -99,12 +131,20 @@ time, mark, audio, video {
   border:2px solid springgreen;
 }
 
+.caja9{
+  transition: margin 3s linear;
+}
+
 .caja.caja9{
   background-color:#2C3E50 ;
 }
 
 .caja.caja9:hover{
  margin: 2px;
+}
+
+.caja10{
+  transition: padding 3s linear;
 }
 
 .caja.caja10{

@@ -36,40 +36,90 @@ time, mark, audio, video {
     font-family: Arial;
 }
 
+.caja.caja1{
+  transition: 1s linear;
+  background-color:#C0392B ;
+}
+
 .caja.caja1:hover{
   transform: scale(2, 0.5);
+}
+
+.caja.caja2{
+  transition: 1s linear;
+  background-color:rgb(155,89,182);
 }
 
 .caja.caja2:hover{
   transform: rotate(0.5turn);
 }
 
+.caja.caja3{
+  transition: 1s linear;
+  background-color:rgb(41,128,185) ;
+}
+
 .caja.caja3:hover{
   transform: skew(30deg, 20deg);
+}
+
+.caja.caja4{
+  transition: 1s linear;
+  background-color:rgb(52,152,219) ;
 }
 
 .caja.caja4:hover{
   transform: skewX(30deg);
 }
 
+.caja.caja5{
+  transition: 1s linear;
+  background-color:rgb(23,165,137);
+}
+
 .caja.caja5:hover{
   transform: skewY(1.07rad);
+}
+
+.caja.caja6{
+  transition: 1s linear;
+  background-color: rgb(241,196,15);
 }
 
 .caja.caja6:hover{
   transform: translate(12px, 50%);
 }
 
+.caja.caja7{
+  transition: 1s linear;
+  background-color:rgb(230,126,34) ;
+}
+
 .caja.caja7:hover{
   transform: translateX(2em);
+}
+
+.caja.caja8{
+  transition: 1s linear;
+  background-color: rgb(149,165,166);
 }
 
 .caja.caja8:hover{
   transform: translateY(3in);
 }
 
+.caja.caja9{
+  transition: 1s linear;
+  background-color: #2C3E50;
+}
+
 .caja.caja9:hover{
   transform: perspective(400px) rotateY(45deg);
+}
+
+.caja.caja10{
+  transition: 1s linear;
+  background-color: rgb(0,0,0);
 }
 
 .caja.caja10:hover{
