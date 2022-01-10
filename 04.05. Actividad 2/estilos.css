@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    font-family: "Montserrat";
+    margin: 20px auto;
+    width: 90%;
+}
+
+header{
+  grid-area: header;
+  text-align: center;
+  font-size: 25px;
+}
+
+nav{
+  grid-area: nav;
+  font-size: 25px;
+}
+
+nav div{
+  padding:25px;
+}
+
+.grid-container {
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item1 {
+  grid-area: item1;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 55px;
+  margin: 10px;
+}
+
+.one_p{
+  font-size: 30px;
+}
+
+.item2 {
+  grid-area: item2;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 55px;
+  margin: 10px;
+}
+
+.two{
+  width: 750px;
+  border-radius: 25px;
+}
+
+.one{
+  width: 1132px;
+  height: 560px;
+  border-radius: 25px;
+}
+
+.item3 {
+  grid-area: item3;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 55px;
+  margin: 10px;
+}
+
+.item4 {
+  grid-area: item4;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 55px;
+  margin: 10px;
+}
+
+.item5 {
+  grid-area: item5;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 55px;
+  margin: 10px;
+}
+
+.little{
+  width: 450px;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template:
+      "header  header header"  100px
+      "nav  main   main" auto
+      "nav  footer footer"  100px /
+      200px    auto   200px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template:
+        "item1  item1 item2"  
+        "item1  item1 item2"
+        "item3  item4 item5" 
+    }
