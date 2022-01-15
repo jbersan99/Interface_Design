@@ -1,0 +1,34 @@
+$borde:solid 3px black;
+div {
+    border: solid 3px white;
+    text-align: center;
+}
+
+.content {
+    padding: 30px;
+}
+
+.green {
+    background-color: #29FE2F;
+    border: $borde;
+}
+
+.pink {
+    background-color: #FD29FC;
+    border: $borde;
+}
+
+.red {
+    background-color: #FC0D1B;
+    border: $borde;
+}
+
+.orange {
+    background-color: #FE9A5D;
+    border: $borde;
+}
+
+.blue {
+    background-color: #0B24FB;
+    border: $borde;
+}

@@ -1,0 +1,29 @@
+$borde:solid 1px black;
+$cuadros_1:#88ABDD;
+$cuadros_2:#CCCCCD;
+$cuadro_3:#2DFFFF;
+$cuadros_4:#FE9A5C;
+$rectangulos:#29FE2F;
+div {
+    text-align: center;
+}
+
+.primeros {
+    background-color: $cuadros_1;
+}
+
+.segundos {
+    background-color: $cuadros_2;
+}
+
+.plataforma {
+    background-color: $cuadro_3;
+}
+
+.animos {
+    background-color: $cuadros_4;
+}
+
+.encabezados {
+    background-color: $rectangulos;
+}

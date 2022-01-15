@@ -1,0 +1,64 @@
+$borde:solid 1px black;
+$cuadros_1:#FC0D1B;
+$rectangulo:#29FE2F;
+$rectangulos:#FFFE38;
+$header_mediano:#2DFFFF;
+$header_chiquito:#FEB385;
+div {
+    text-align: center;
+}
+
+.primero {
+    background-color: $cuadros_1;
+    text-align: center;
+}
+
+.segundo {
+    background-color: $cuadros_1;
+    text-align: center;
+}
+
+.tercero {
+    background-color: $cuadros_1;
+    text-align: center;
+}
+
+.header {
+    background-color: $rectangulo;
+}
+
+.footer {
+    background-color: $rectangulos;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        background-color: $header_mediano;
+    }
+    .primero {
+        background-color: $cuadros_1;
+        text-align: left;
+    }
+    .segundo {
+        background-color: $cuadros_1;
+        text-align: right;
+    }
+    .tercero {
+        background-color: $rectangulo;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        background-color: $header_chiquito;
+    }
+    .segundo {
+        background-color: $header_mediano;
+        text-align: center;
+    }
+    .tercero {
+        background-color: $cuadros_1;
+        text-align: right;
+    }
+}
