@@ -1,0 +1,29 @@
+$despliegues: green;
+$php: blue;
+$diseño: red;
+$java:orange;
+$empresas: grey;
+$recreo: black;
+.diseño {
+    color: $diseño;
+}
+
+.php {
+    color: $php;
+}
+
+.despliegue {
+    color: $despliegues;
+}
+
+.java {
+    color: $java;
+}
+
+.empresas {
+    color: $empresas;
+}
+
+.recreo {
+    color: $recreo;
+}

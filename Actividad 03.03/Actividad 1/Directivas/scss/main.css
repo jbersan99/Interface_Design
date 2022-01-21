@@ -7,11 +7,12 @@ body {
   widows: 80%;
   margin: 0px auto;
 }
+
 .container .row {
   padding: 20px;
 }
 
-.btn-ok, .btn-error {
+.btn-error, .btn-ok {
   border-radius: 2px;
   color: #fff;
   padding: 5px 0;
@@ -26,4 +27,5 @@ body {
 
 .btn-ok {
   background-color: #0f0;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
