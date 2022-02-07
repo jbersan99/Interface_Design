@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function accionPlay() {
+        if (!medio.paused && !medio.ended) {
+            medio.pause();
+            play.value = '\u25BA'; //\u25BA
+            document.body.style.backgroundColor = '#fff';
+        } else {
+            medio.play();
+            play.value = '||';
+            document.body.style.backgroundColor = 'grey';
+        }
+    }
+
+    function accionReiniciar() {
+        medio.pause();
+        medio.currentTime = 0;
+        medio.play();
+        play.value = '||';
+        document.body.style.backgroundColor = '#fff';
+        //Usar propiedad .currentTime
+        //Reproducir el vídeo
+        //Cambiar el valor del botón a ||
+    }
+
+    function accionRetrasar() {
+        if (medio.currentTime <= 3) {
+            rwd.classList.remove('active');
+            clearInterval(intervalRwd);
+            stopMedia();
+        } else {
+            medio.currentTime -= 3;
+        }
+        //Usar propiedad .curentTime
+        //Contemplar que no existen valores negativos
+    }
+
+    function accionAdelantar() {
+        if (medio.currentTime >= medio.duration - 3) {
+            fwd.classList.remove('active');
+            clearInterval(intervalFwd);
+            stopMedia();
+        } else {
+            medio.currentTime += 3;
+        }
+        //Contemplar que no existen valores mayores a medio.duration	
+    }
+
+    function accionSilenciar() {
+        if (medio.muted == true) {
+            medio.muted = false;
+        } else {
+            medio.muted = true;
+        }
+        //Utilizar medio.muted = true; o medio.muted = false;
+    }
+
+    function accionMasVolumen() {
+        if (medio.volume != 1) {
+            medio.volume += 0.2;
+        }
+        //Contemplar que el valor máximo de volumen es 1
+    }
+
+    function accionMenosVolumen() {
+        if (medio.volume != 0) {
+            medio.volume -= 0.2;
+        }
+        //Contemplar que el valor mínimo de volumen es 0
+    }
+
+    function iniciar() {
+
+        medio = document.getElementById('medio');
+        play = document.getElementById('play');
+        reiniciar = document.getElementById('reiniciar');
+        retrasar = document.getElementById('retrasar');
+        adelantar = document.getElementById('adelantar');
+        silenciar = document.getElementById('silenciar');
+
+        play.addEventListener('click', accionPlay);
+        reiniciar.addEventListener('click', accionReiniciar);
+        retrasar.addEventListener('click', accionRetrasar);
+        adelantar.addEventListener('click', accionAdelantar);
+        silenciar.addEventListener('click', accionSilenciar);
+        menosVolumen.addEventListener('click', accionMenosVolumen);
+        masVolumen.addEventListener('click', accionMasVolumen);
+    }
+
+    window.addEventListener('load', iniciar, false);
+</script>
+
+<body>
+    <video id="medio" width="720" height="400">
+        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
+      </video>
+
+    <nav>
+        <input type="button" id="reiniciar" value="&#x21ba;">
+        <input type="button" id="retrasar" value="&laquo;">
+        <input type="button" id="play" value="&#9658;">
+        <input type="button" id="adelantar" value="&raquo;">
+        <input type="button" id="silenciar" value="&#x1f507;">
+        <label>Volumen</label>
+        <input type="button" id="menosVolumen" value="-">
+        <input type="button" id="masVolumen" value="+">
+    </nav>
+</body>
+
+</html>
